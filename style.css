@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     border-radius: 5px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto;
 }
 
 nav {
@@ -33,6 +33,7 @@ nav {
 
 .category-card > h2{
     padding-bottom: 5%;
+    text-transform: capitalize;
 }
 
 .category-card > p{
@@ -47,7 +48,12 @@ label {
     padding: 2.5% 5%;
     background: #c2e59c;
     margin: 2.5% 0 ;
+    text-transform: lowercase;
+    /* text-transform: capitalize; */
+}
 
+label > p {
+    text-transform: capitalize;
 }
 
 .submit-btn {
@@ -66,42 +72,6 @@ label {
     align-items: center;
 }
 
-/* .add-section {
-    width: 100%;
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-/* .add-form{
-    background: whitesmoke;
-    width: 100%;
-    margin: 5%;
-    padding: 5%;
-    border-radius: 5px;
-    border: 2px solid lightgray;
-} */
-
-/* input {
-    width: 100%;
-    display: block;
-    width: 100%;
-    margin: 2.5%;
-    padding: 2.5%;
-    font-size: medium;
-    border: 1px solid forestgreen;
-    border-radius: 5px;
-} */
-
-/* .add-image-button {
-    background: #c2e59c;
-}
-
-.file-input {
-    height: 5%;
-} */
-
 body{
     background: #c2e59c;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
@@ -110,7 +80,6 @@ body{
 
 h1, h2 {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .company-logo {
@@ -153,14 +122,11 @@ footer {
 
 
 @media screen and (min-width: 760px) {
-    .service {
-        float: left;
-        width: 31.33%;
-        padding: 1%;
-        margin: 1%;
-    }
 
-    .about-us p{
-        columns: 2;
+    nav{
+        padding: auto;
+    }
+    body{
+        margin: 0 10%;
     }
 }
