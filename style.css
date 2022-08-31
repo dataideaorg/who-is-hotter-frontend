@@ -21,6 +21,7 @@ nav {
 .theme > span {
     color: orangered;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 700;
 }
 
 .wrapper {
