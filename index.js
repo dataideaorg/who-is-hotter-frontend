@@ -1,6 +1,6 @@
 const wrapper = document.querySelector(".wrapper");
 
-const server_url = "https://who-is-hotter.herokuapp.com/";
+const server_url = "https://who-is-hotter.herokuapp.com";
 
 const getStudents = async () => {
   const data = await fetch(`${server_url}/subjects`);
