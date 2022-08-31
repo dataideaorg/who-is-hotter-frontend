@@ -15,10 +15,12 @@ nav {
     background: whitesmoke;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+
 }
 
 .theme > span {
     color: orangered;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .wrapper {
@@ -81,6 +83,7 @@ body{
 
 h1, h2 {
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .company-logo {
