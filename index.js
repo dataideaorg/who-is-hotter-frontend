@@ -1,5 +1,6 @@
 const wrapper = document.querySelector(".wrapper");
 
+// const server_url = "http://localhost:5000";
 const server_url = "https://who-is-hotter.herokuapp.com";
 
 const getStudents = async () => {
@@ -25,13 +26,13 @@ const getCategories = async () => {
 const getDescription = (categ) => {
   //category descriptions
   const [black, light, skinny, classy, brains, curvy, other] = [
-    "black ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, sint!",
-    "light ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, sint!",
-    "skinny ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, sint!",
-    "classy ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, sint!",
-    "brains ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, sint!",
-    "curvy ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, sint!",
-    "other ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, sint!",
+    "Black is beauty, black is bold, but who has got most of this character?",
+    "The lightest girls of our class, who is giving you the 'thigh power'?",
+    "They say skinny women have sekzual agility, pick a petite",
+    "Some consider these ladies untouchable, but you have alot of 'game', who are you gonna play?",
+    "Women contribute largest to the level of intelligence of children, who will be your brilliant baby mama?",
+    "We cannot deplete the reasons why a 'curvy woman' in public, just pick a fanta",
+    "These are the other notables, but who did you really notice?",
   ];
 
   if (categ === "black") {

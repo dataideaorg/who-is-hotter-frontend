@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     border-radius: 5px;
-    font-family: Roboto;
+    font-family: 'Anek Telugu', sans-serif;
     color: rgb(25, 25, 25);
 }
 
@@ -15,13 +15,13 @@ nav {
     background: whitesmoke;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-
 }
 
 .theme > span {
     color: orangered;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 700;
+    font-family: 'Anton', sans-serif;
+    font-weight:bolder;
+    font-size: 2rem;
 }
 
 .wrapper {
@@ -56,18 +56,23 @@ label {
     /* text-transform: capitalize; */
 }
 
+label:hover{
+    background-color: #64b3f4;
+}
+
 label > p {
     text-transform: capitalize;
 }
 
 .submit-btn {
     width: 90%;
-    border: 2px solid #c2e59c;
-    padding: 2.5% 5%;
-    background: whitesmoke;
+    border: 2px solid whitesmoke;
+    padding: 2% 5%;
+    background: #64b3f4;
     cursor: pointer;
-    font-weight: 500;
-    color: forestgreen;
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
 }
 
 .btn-container {
@@ -84,7 +89,7 @@ body{
 
 h1, h2 {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Anton', sans-serif;
 }
 
 .company-logo {
@@ -122,6 +127,7 @@ footer {
     box-shadow: 1px 1px 1px lightgray;
     background: whitesmoke;
     margin-top: 5%;
+    text-align: center;
 }
 
 
