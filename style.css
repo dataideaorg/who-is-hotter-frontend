@@ -38,15 +38,24 @@ nav {
 .category-card > h2{
     padding-bottom: 5%;
     text-transform: capitalize;
+    text-decoration: underline;
 }
 
 .category-card > p{
     padding: 2.5%;
 }
 
+
 .disclaimer {
     background: rgb(253, 216, 2);
     margin-top: 2.5%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.disclaimer > span{
+    display: block;
+    font-weight: 400;
 }
 
 label {
@@ -64,9 +73,9 @@ label:hover{
     background-color: #64b3f4;
 }
 
-label > p {
+/* label > p {
     text-transform: capitalize;
-}
+} */
 
 .submit-btn {
     width: 90%;
