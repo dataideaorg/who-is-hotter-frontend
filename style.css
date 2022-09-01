@@ -45,6 +45,11 @@ nav {
     border:1px solid #c2e59c;
 }
 
+.disclaimer {
+    background: rgb(253, 216, 2);
+    margin-top: 2.5%;
+}
+
 label {
     display: flex;
     justify-content: space-between;
