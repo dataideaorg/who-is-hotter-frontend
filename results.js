@@ -1,7 +1,7 @@
 const wrapper = document.querySelector(".wrapper");
 
-const server_url = "http://localhost:5000";
-// const server_url = "https://who-is-hotter.herokuapp.com";
+// const server_url = "http://localhost:5000";
+const server_url = "https://who-is-hotter.herokuapp.com";
 
 const getStudents = async () => {
   const data = await fetch(`${server_url}/subjects`);
@@ -31,8 +31,8 @@ const getDescription = (categ) => {
     "They say skinny women have sekzual agility, pick a petite",
     "Some consider these ladies untouchable, but you have alot of 'game', who are you gonna play?",
     "Women contribute largest to the level of intelligence of children, who will be your brilliant baby mama?",
-    "We cannot deplete the reasons why a 'curvy woman' in public, just pick a fanta",
-    "These are the other notables, but who did you really notice?",
+    "We cannot deplete the reasons why a 'curvy woman' in public, who is the fanta?",
+    "These are the other notables, but who was noticed?",
   ];
 
   if (categ === "black") {
@@ -70,19 +70,48 @@ const createCategoriesElements = async () => {
   });
 };
 
-const displaySubjects = async () => {
+const getTotalVotes = async () => {
   const categories = await getCategories();
   const subjects = await getStudents();
 
+  const totals = {};
+
+  categories.forEach((category) => {
+    let sum = 0;
+    subjects.forEach((subject) => {
+      if (subject.category === category) {
+        sum += subject.votes;
+      }
+    });
+    totals[`${category}`] = sum;
+  });
+
+  console.log(totals);
+  return totals;
+};
+
+const displaySubjects = async () => {
+  const categories = await getCategories();
+  const subjects = await getStudents();
+  const totals = await getTotalVotes();
+
   categories.forEach((category) => {
     let template = "";
+    const category_total = totals[`${category}`];
 
     subjects.forEach((subject) => {
       if (subject.category == category) {
         template += `
           <label>
             <p>${subject.name}</p> 
-            <input type = "radio" name = "${subject.category}" value = "${subject._id}"/>
+            <div class = "progress-container">
+            <p class = "percent-score">${Math.round(
+              (subject.votes / category_total) * 100
+            )}%</p>
+            <progress value = "${
+              subject.votes
+            }" max = "${category_total}" ></progress>
+            </div>
           </label>
       `;
       }
@@ -92,28 +121,28 @@ const displaySubjects = async () => {
   });
 };
 
-const handleSubmit = async () => {
-  const categories = await getCategories();
+// const handleSubmit = async () => {
+//   const categories = await getCategories();
 
-  categories.forEach((category) => {
-    const radios = document.getElementsByName(`${category}`);
+//   categories.forEach((category) => {
+//     const radios = document.getElementsByName(`${category}`);
 
-    radios.forEach(async (radio) => {
-      if (radio.checked) {
-        const response = await fetch(`${server_url}/add-vote/${radio.value}`, {
-          method: "POST",
-        });
-        const message = await response.json();
-        console.log(message);
-      }
+//     radios.forEach(async (radio) => {
+//       if (radio.checked) {
+//         const response = await fetch(`${server_url}/add-vote/${radio.value}`, {
+//           method: "POST",
+//         });
+//         const message = await response.json();
+//         console.log(message);
+//       }
 
-      document.querySelector(".submit-btn").style.backgroundColor = "orangered";
-      radio.disabled = true;
-    });
-  });
+//       document.querySelector(".submit-btn").style.backgroundColor = "orangered";
+//       radio.disabled = true;
+//     });
+//   });
 
-  alert("Thanks for voting!😊");
-};
+//   alert("Thanks for voting!😊");
+// };
 window.addEventListener("DOMContentLoaded", () => {
   createCategoriesElements();
   displaySubjects();
