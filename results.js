@@ -110,7 +110,7 @@ const displaySubjects = async () => {
             )}%</p>
             <progress value = "${
               subject.votes
-            }" max = "${category_total}" ></progress>
+            }" max = "${category_total}"></progress>
             </div>
           </label>
       `;
