@@ -86,11 +86,16 @@ label:hover{
 
 .progress-container{
     position: relative;
+    align-self: center;
+}
+
+.progress-bar-container{
+    width: 100%;
 }
 
 .progress-container > p {
     position: absolute;
-    left: 20%;
+    left: 45%;
 }
 
 

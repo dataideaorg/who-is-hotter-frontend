@@ -108,9 +108,11 @@ const displaySubjects = async () => {
             <p class = "percent-score">${Math.round(
               (subject.votes / category_total) * 100
             )}%</p>
+            <div class = "progress-bar-container">
             <progress value = "${
               subject.votes
             }" max = "${category_total}" ></progress>
+            </div>
             </div>
           </label>
       `;
