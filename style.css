@@ -58,6 +58,10 @@ nav {
     font-weight: 400;
 }
 
+.reveal-button{
+    background-color: #64b3f4;
+}
+
 label {
     display: flex;
     justify-content: space-between;

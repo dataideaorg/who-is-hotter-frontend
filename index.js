@@ -82,7 +82,7 @@ const displaySubjects = async () => {
         template += `
           <label>
             <p>${subject.name}</p> 
-            <input type = "radio" name = "${subject.category}" value = "${subject._id}"/>
+            <input type = "radio" disabled name = "${subject.category}" value = "${subject._id}"/>
           </label>
       `;
       }
@@ -114,6 +114,7 @@ const handleSubmit = async () => {
 
   alert("Thanks for voting!😊");
 };
+
 window.addEventListener("DOMContentLoaded", () => {
   createCategoriesElements();
   displaySubjects();
