@@ -38,7 +38,7 @@ const getDescription = (categ) => {
   ] = [
     "It doesn't matter if a cat is black so long as it catches mice 😉",
     "The 'I must make it even though it's illegal', who will save you?",
-    "These ones are believed to be handy somewhere",
+    "There's no weight limit on beauty",
     "Even though looks don't really matter on a guy, we as ladies still notice things like dresscode,character 😎",
     "Having an ancestral line that's bright is a necessity holding body factors constant",
     "In all fields of life love,money, etc",
