@@ -111,6 +111,7 @@ h1, h2 {
 
 .company-logo {
     color: forestgreen;
+    text-decoration: underline;
 }
 
 .image-container {

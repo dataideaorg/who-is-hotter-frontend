@@ -98,7 +98,7 @@ const displaySubjects = async () => {
         template += `
           <label>
             <p>${subject.name}</p> 
-            <input type = "radio" disabled name = "${subject.category}" value = "${subject._id}"/>
+            <input type = "radio" name = "${subject.category}" value = "${subject._id}"/>
           </label>
       `;
       }
