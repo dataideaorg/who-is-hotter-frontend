@@ -43,7 +43,7 @@ const getDescription = (categ) => {
     "Having an ancestral line that's bright is a necessity holding body factors constant",
     "In all fields of life love,money, etc",
     "If these were women,they surely would have nice bodies",
-    "Every group must have ambassadors that represent the group",
+    "Every group must have ambassadors that represent it, who best represents their group?",
     "The 'simala gogela' 😶",
   ];
 
