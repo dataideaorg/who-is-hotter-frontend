@@ -65,7 +65,7 @@ nav {
 label {
     display: flex;
     justify-content: space-between;
-    border: 1px solid forestgreen;
+    /* border: 1px solid forestgreen; */
     padding: 2.5% 5%;
     background: #c2e59c;
     margin: 2.5% 0 ;

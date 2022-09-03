@@ -25,30 +25,33 @@ const getCategories = async () => {
 
 const getDescription = (categ) => {
   //category descriptions
-  const [black, light, skinny, classy, brains, curvy, other] = [
-    "Black is beauty, black is bold, but who has got most of this character?",
-    "The lightest girls of our class, who is giving you the 'thigh power'?",
-    "They say skinny women have sekzual agility, pick a petite",
-    "Some consider these ladies untouchable, but you have alot of 'game', who are you gonna play?",
-    "Women contribute largest to the level of intelligence of children, who will be your brilliant baby mama?",
-    "We cannot deplete the reasons why a 'curvy woman' in public, who is the fanta?",
-    "These are the other notables, but who was noticed?",
+  const [black, survivor, skinny, classy, brains, hustler, body, ambassador] = [
+    "Black is beauty pageant, black shines brightest",
+    "The 'I must make it even though it's illegal', who will save you?",
+    "These ones are believed to be handy somewhere",
+    "Even though looks don't really matter on a guy, we as ladies still notice things like dresscode,character",
+    "Having an ancestral line that's bright is a necessity holding body factors constant",
+    "In all fields of life love,money, etc",
+    "If these were women,they surely would have nice bodies",
+    "Every group must have ambassadors that represent the group",
   ];
 
   if (categ === "black") {
     return black;
-  } else if (categ === "light") {
-    return light;
+  } else if (categ === "survivor") {
+    return survivor;
   } else if (categ === "skinny") {
     return skinny;
   } else if (categ === "classy") {
     return classy;
   } else if (categ === "brains") {
     return brains;
-  } else if (categ === "curvy") {
-    return curvy;
-  } else if (categ === "other") {
-    return other;
+  } else if (categ === "hustler") {
+    return hustler;
+  } else if (categ === "body") {
+    return body;
+  } else if (categ === "ambassador") {
+    return ambassador;
   } else {
     return "description not avaialable";
   }
