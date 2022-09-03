@@ -69,6 +69,10 @@ progress[value]::-webkit-progress-value{
     font-weight: 400;
 }
 
+.brains, .survivor {
+    background: lightcoral;
+}
+
 label {
     display: flex;
     flex-direction: column;
