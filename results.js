@@ -25,7 +25,17 @@ const getCategories = async () => {
 
 const getDescription = (categ) => {
   //category descriptions
-  const [black, survivor, skinny, classy, brains, hustler, body, ambassador] = [
+  const [
+    black,
+    survivor,
+    skinny,
+    classy,
+    brains,
+    hustler,
+    body,
+    ambassador,
+    reserved,
+  ] = [
     "Black is beauty pageant, black shines brightest",
     "The 'I must make it even though it's illegal', who will save you?",
     "These ones are believed to be handy somewhere",
@@ -34,6 +44,7 @@ const getDescription = (categ) => {
     "In all fields of life love,money, etc",
     "If these were women,they surely would have nice bodies",
     "Every group must have ambassadors that represent the group",
+    "The 'simala gogela' 😶",
   ];
 
   if (categ === "black") {
@@ -52,6 +63,8 @@ const getDescription = (categ) => {
     return body;
   } else if (categ === "ambassador") {
     return ambassador;
+  } else if (categ === "reserved") {
+    return reserved;
   } else {
     return "description not avaialable";
   }
